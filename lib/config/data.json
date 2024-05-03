@@ -1,0 +1,45 @@
+{
+    "tabs": [
+        {
+            "title": "الرضاعة الطبيعية",
+            "iconPath": "assets/icons/baby.png",
+            "content": "section1"
+        },
+        {
+            "title": "تغذية الأم المرضع",
+            "iconPath": "assets/icons/food.png",
+            "content": "section2"
+        },
+        {
+            "title": "شروط إدخال الطعام للرضيع",
+            "iconPath": "assets/icons/mom.png",
+            "content": "section3"
+        },
+        {
+            "title": "تغذية الطفل\n الشهر الرابع والخامس",
+            "iconPath": "assets/icons/food2.png",
+            "content": "section4"
+        },
+        {
+            "title": "تغذية الرضع\n من عمر 6 شهور الى سنة",
+            "iconPath": "assets/icons/food.png",
+            "content": "section5"
+        }
+    ],
+    "sections": {
+        "section1": [
+            {
+                "title": "فوائد الرضاعة الطبيعية للرضع",
+                "page": "page1_1"
+            },
+            {
+                "title": "فوائد الرضاعة الطبيعية للأم",
+                "page": "page1_2"
+            },
+            {
+                "title": "وقت الرضاع",
+                "page": "page1_3"
+            }
+        ]
+    }
+}
