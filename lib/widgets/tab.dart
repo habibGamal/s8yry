@@ -3,7 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:sa8yry/config/colors.dart';
 import 'package:sa8yry/config/data.dart';
-import 'package:sa8yry/pages/section.dart';
+import 'package:sa8yry/pages/sections.dart';
 
 class TabWidget extends StatelessWidget {
   final TabData data;
@@ -17,10 +17,15 @@ class TabWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () async {
+        final sections = await data.loadSections();
         await Navigator.of(context).push(PageTransition(
           type: PageTransitionType.fade,
           alignment: Alignment.center,
-          child: Section(data.title),
+          child: Sections(
+            title: data.title,
+            data: sections,
+            imagePath: data.imagePath,
+          ),
         ));
       },
       child: Container(

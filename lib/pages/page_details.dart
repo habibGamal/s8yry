@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:sa8yry/config/data.dart';
 import 'package:sa8yry/widgets/header.dart';
 import 'package:sa8yry/widgets/highlighted.dart';
 import 'package:sa8yry/widgets/long_text.dart';
 import 'package:sa8yry/widgets/rounded_image.dart';
 
 class PageDetails extends StatefulWidget {
-  final String title;
-  final List<Map<String, String>> data;
-  const PageDetails(this.title, this.data, {super.key});
+  final PageData data;
+  const PageDetails(this.data, {super.key});
 
   @override
   State<PageDetails> createState() => _PageDetailsState();
@@ -52,22 +52,24 @@ class _PageDetailsState extends State<PageDetails>
         ),
         child: ListView(
           children: [
-            Header(title: widget.title, animateHeaderCtrl: _animateHeaderCtrl),
+            Header(
+                title: widget.data.title,
+                animateHeaderCtrl: _animateHeaderCtrl),
             const SizedBox(
               height: 25,
             ),
-            ...widget.data.map(
+            ...widget.data.content.map(
               (data) {
-                if (data.containsKey('highlighted')) {
-                  return Highlighted(text: data['highlighted']!)
+                if (data.type == ContentType.highlighted) {
+                  return Highlighted(text: data.content)
                       .animate(delay: 200.ms)
                       .fadeIn();
-                } else if (data.containsKey('text')) {
-                  return LongText(text: data['text']!)
+                } else if (data.type == ContentType.text) {
+                  return LongText(text: data.content)
                       .animate(delay: 200.ms)
                       .fadeIn();
-                } else if (data.containsKey('image')) {
-                  return RoundedImage(path: data['image']!)
+                } else if (data.type == ContentType.image) {
+                  return RoundedImage(path: data.content)
                       .animate(delay: 200.ms)
                       .fadeIn();
                 }

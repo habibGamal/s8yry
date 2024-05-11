@@ -1,0 +1,14 @@
+[
+    {
+        "title": "الرضاعة الطبيعية",
+        "iconPath": "assets/icons/baby.png",
+        "imagePath": "assets/images/breastfeeding.jpg",
+        "content": "tab1"
+    },
+    {
+        "title": "الرضاعة الصناعية",
+        "iconPath": "assets/icons/baby.png",
+        "imagePath": "assets/images/breastfeeding.jpg",
+        "content": "tab2"
+    }
+]

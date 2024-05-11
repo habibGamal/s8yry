@@ -10,12 +10,12 @@ class RoundedImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 20),
+      margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(20.0), // adjust the value as needed
         child: Image.asset(
           path,
-          height: 250,
+          // height: 250,
           fit: BoxFit.cover,
         ),
       ),

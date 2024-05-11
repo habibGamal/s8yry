@@ -1,0 +1,32 @@
+[
+    {
+        "title": "الرضاعة الطبيعية",
+        "iconPath": "assets/icons/baby.png",
+        "imagePath": "assets/images/breastfeeding.jpg",
+        "content": "tab1"
+    },
+    {
+        "title": "تغذية الأم المرضع",
+        "iconPath": "assets/icons/food.png",
+        "imagePath": "assets/images/breastfeeding.jpg",
+        "content": "tab2"
+    },
+    {
+        "title": "شروط إدخال الطعام للرضيع",
+        "iconPath": "assets/icons/mom.png",
+        "imagePath": "assets/images/breastfeeding.jpg",
+        "content": "tab3"
+    },
+    {
+        "title": "تغذية الطفل\n الشهر الرابع والخامس",
+        "iconPath": "assets/icons/food2.png",
+        "imagePath": "assets/images/breastfeeding.jpg",
+        "content": "section4"
+    },
+    {
+        "title": "تغذية الرضع\n من عمر 6 شهور الى سنة",
+        "iconPath": "assets/icons/food.png",
+        "imagePath": "assets/images/breastfeeding.jpg",
+        "content": "section5"
+    }
+]

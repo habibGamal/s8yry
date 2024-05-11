@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sa8yry/config/colors.dart';
 
-class SectionTiltle extends StatelessWidget {
+class SectionTitle extends StatelessWidget {
   final int count;
   final String title;
-  const SectionTiltle({
+  const SectionTitle({
     super.key,
     required this.title,
     required this.count,
