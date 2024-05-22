@@ -10,12 +10,12 @@ import 'package:sa8yry/widgets/section_title.dart';
 class Sections extends StatefulWidget {
   final String title;
   final List<SectionData> data;
-  final String imagePath;
+  final String? imagePath;
   const Sections({
     super.key,
     required this.title,
     required this.data,
-    required this.imagePath,
+    this.imagePath,
   });
 
   @override
@@ -70,6 +70,19 @@ class _SectionsState extends State<Sections> with TickerProviderStateMixin {
               _titleCount++;
               return GestureDetector(
                 onTap: () async {
+                  // load nested sections if available
+                  final sections = section.subSections;
+                  if (sections != null) {
+                    await Navigator.of(context).push(PageTransition(
+                      type: PageTransitionType.fade,
+                      alignment: Alignment.center,
+                      child: Sections(
+                        title: section.title,
+                        data: sections,
+                      ),
+                    ));
+                    return;
+                  }
                   final PageData pageData = await section.loadPage();
                   await Navigator.of(context).push(PageTransition(
                     type: PageTransitionType.fade,
@@ -83,27 +96,6 @@ class _SectionsState extends State<Sections> with TickerProviderStateMixin {
                 ).animate(delay: 200.ms).fadeIn(),
               );
             }).toList(),
-            // ...section1.map(
-            //   (data) {
-            //     _titleCount++;
-            //     return GestureDetector(
-            //       onTap: () async {
-            //         await Navigator.of(context).push(PageTransition(
-            //           type: PageTransitionType.fade,
-            //           alignment: Alignment.center,
-            //           child: PageDetails(
-            //             data['title']! as String,
-            //             data['page']! as List<Map<String, String>>,
-            //           ),
-            //         ));
-            //       },
-            //       child: SectionTitle(
-            //         title: data['title']! as String,
-            //         count: _titleCount,
-            //       ).animate(delay: 200.ms).fadeIn(),
-            //     );
-            //   },
-            // ).toList(),
             const SizedBox(
               height: 25,
             ),

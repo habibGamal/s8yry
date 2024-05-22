@@ -1,5 +1,11 @@
 [
     {
+        "title": "عزيزتي الأم",
+        "iconPath": "assets/icons/love2.png",
+        "imagePath": "assets/images/breastfeeding.jpg",
+        "content": "tab0"
+    },
+    {
         "title": "الرضاعة الطبيعية",
         "iconPath": "assets/icons/baby.png",
         "imagePath": "assets/images/breastfeeding.jpg",
@@ -7,8 +13,50 @@
     },
     {
         "title": "الرضاعة الصناعية",
-        "iconPath": "assets/icons/baby.png",
+        "iconPath": "assets/icons/food_art.png",
         "imagePath": "assets/images/breastfeeding.jpg",
         "content": "tab2"
+    },
+    {
+        "title": "العمر المناسب لإدخال الطعام",
+        "iconPath": "assets/icons/food.png",
+        "imagePath": "assets/images/breastfeeding.jpg",
+        "content": "tab3"
+    },
+    {
+        "title": "الأغذية الممنوعة عن الرضيع في عامه الأول",
+        "iconPath": "assets/icons/no_food.png",
+        "imagePath": "assets/images/breastfeeding.jpg",
+        "content": "tab5"
+    },
+    {
+        "title": "نوم الرضع",
+        "iconPath": "assets/icons/sleep.png",
+        "imagePath": "assets/images/breastfeeding.jpg",
+        "content": "tab6"
+    },
+    {
+        "title": "معدل النمو  والتطور الحركي",
+        "iconPath": "assets/icons/growth.png",
+        "imagePath": "assets/images/breastfeeding.jpg",
+        "content": "tab7"
+    },
+    {
+        "title": "13 مشكلة صحية وحلها",
+        "iconPath": "assets/icons/health.png",
+        "imagePath": "assets/images/breastfeeding.jpg",
+        "content": "tab8"
+    },
+    {
+        "title": "الفطام",
+        "iconPath": "assets/icons/mom2.png",
+        "imagePath": "assets/images/breastfeeding.jpg",
+        "content": "tab9"
+    },
+    {
+        "title": "إهداء",
+        "iconPath": "assets/icons/love.png",
+        "imagePath": "assets/images/breastfeeding.jpg",
+        "content": "tab10"
     }
 ]
