@@ -65,7 +65,11 @@ class _SectionsState extends State<Sections> with TickerProviderStateMixin {
             const SizedBox(
               height: 25,
             ),
-            const RoundedImage(path: 'assets/images/page1/1.jpg'),
+            // const RoundedImage(path: 'assets/images/page1/1.jpg'),
+            if (
+                // check if image path is available
+                widget.imagePath != null)
+              RoundedImage(path: widget.imagePath!),
             ...widget.data.map((section) {
               _titleCount++;
               return GestureDetector(
@@ -79,6 +83,7 @@ class _SectionsState extends State<Sections> with TickerProviderStateMixin {
                       child: Sections(
                         title: section.title,
                         data: sections,
+                        imagePath: section.imagePath,
                       ),
                     ));
                     return;

@@ -27,18 +27,18 @@ class Header extends StatelessWidget {
             20,
           ),
           width: double.infinity,
-          child: Text(
-            title,
-            style: Theme.of(context)
-                .textTheme
-                .headlineLarge
-                ?.copyWith(color: Colors.white, fontSize: 26),
-            // softWrap: false,
-          ).animate().align(
-                duration: 500.ms,
-                begin: Alignment.bottomCenter,
-                end: Alignment.centerRight,
-              ),
+          child: FittedBox(
+            child: Text(
+              title,
+              style: Theme.of(context).textTheme.headlineLarge?.copyWith(
+                  color: Colors.white, fontSize: 26, wordSpacing: 10),
+              // softWrap: false,
+            ).animate().align(
+                  duration: 500.ms,
+                  begin: Alignment.bottomCenter,
+                  end: Alignment.centerRight,
+                ),
+          ),
         )
             .animate(
               controller: animateHeaderCtrl,

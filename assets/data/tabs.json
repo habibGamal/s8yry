@@ -2,61 +2,63 @@
     {
         "title": "عزيزتي الأم",
         "iconPath": "assets/icons/love2.png",
-        "imagePath": "assets/images/breastfeeding.jpg",
-        "content": "tab0"
+        "content": "tab0",
+        "directPage": "page_0"
     },
     {
         "title": "الرضاعة الطبيعية",
         "iconPath": "assets/icons/baby.png",
-        "imagePath": "assets/images/breastfeeding.jpg",
+        "imagePath": "assets/images/page1/1.jpg",
         "content": "tab1"
     },
     {
         "title": "الرضاعة الصناعية",
         "iconPath": "assets/icons/food_art.png",
-        "imagePath": "assets/images/breastfeeding.jpg",
+        "imagePath": "assets/images/Picture16.jpg",
         "content": "tab2"
     },
     {
         "title": "العمر المناسب لإدخال الطعام",
         "iconPath": "assets/icons/food.png",
-        "imagePath": "assets/images/breastfeeding.jpg",
         "content": "tab3"
     },
     {
-        "title": "الأغذية الممنوعة عن الرضيع في عامه الأول",
-        "iconPath": "assets/icons/no_food.png",
-        "imagePath": "assets/images/breastfeeding.jpg",
-        "content": "tab5"
+        "title": "تغذية الرضيع",
+        "iconPath": "assets/icons/food.png",
+        "imagePath": "assets/images/tab4/1.jpg",
+        "content": "tab4"
     },
     {
         "title": "نوم الرضع",
         "iconPath": "assets/icons/sleep.png",
-        "imagePath": "assets/images/breastfeeding.jpg",
+        "imagePath": "assets/images/tab6/Picture1.jpg",
         "content": "tab6"
     },
     {
         "title": "معدل النمو  والتطور الحركي",
         "iconPath": "assets/icons/growth.png",
-        "imagePath": "assets/images/breastfeeding.jpg",
         "content": "tab7"
     },
     {
-        "title": "13 مشكلة صحية وحلها",
+        "title": "14 مشكلة صحية وحلها",
         "iconPath": "assets/icons/health.png",
-        "imagePath": "assets/images/breastfeeding.jpg",
         "content": "tab8"
     },
     {
         "title": "الفطام",
         "iconPath": "assets/icons/mom2.png",
-        "imagePath": "assets/images/breastfeeding.jpg",
         "content": "tab9"
     },
     {
         "title": "إهداء",
         "iconPath": "assets/icons/love.png",
-        "imagePath": "assets/images/breastfeeding.jpg",
-        "content": "tab10"
+        "content": "tab10",
+        "directPage": "page_0"
+    },
+    {
+        "title": "شكر وتقدير",
+        "iconPath": "assets/icons/love.png",
+        "content": "tab11",
+        "directPage": "page_0"
     }
 ]

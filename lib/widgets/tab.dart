@@ -3,6 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:sa8yry/config/colors.dart';
 import 'package:sa8yry/config/data.dart';
+import 'package:sa8yry/pages/page_details.dart';
 import 'package:sa8yry/pages/sections.dart';
 
 class TabWidget extends StatelessWidget {
@@ -17,6 +18,16 @@ class TabWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () async {
+        if (data.directPage != null) {
+          final PageData pageData = await data.loadDirectPage();
+          await Navigator.of(context).push(PageTransition(
+            type: PageTransitionType.fade,
+            alignment: Alignment.center,
+            child: PageDetails(pageData),
+          ));
+          return;
+        }
+
         final sections = await data.loadSections();
         await Navigator.of(context).push(PageTransition(
           type: PageTransitionType.fade,
@@ -59,10 +70,10 @@ class TabWidget extends StatelessWidget {
               width: double.infinity,
               child: Text(
                 data.title,
-                style: Theme.of(context)
-                    .textTheme
-                    .bodyLarge
-                    ?.copyWith(color: Colors.white, fontSize: 26),
+                style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                    color: Colors.white,
+                    fontSize: 26,
+                    fontFamily: 'SultanMedium'),
                 textAlign: TextAlign.center,
                 // softWrap: false,
               ),

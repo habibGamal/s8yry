@@ -19,16 +19,30 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         textTheme:
-            GoogleFonts.tajawalTextTheme(Theme.of(context).textTheme.copyWith(
+            // GoogleFonts.tajawalTextTheme(Theme.of(context).textTheme.copyWith(
+            //       headlineLarge: TextStyle(
+            //         fontSize: 32,
+            //         fontWeight: FontWeight.w500,
+            //         color: primaryColors['900'],
+            //       ),
+            //       headlineMedium: TextStyle(
+            //         color: primaryColors['900'],
+            //       ),
+            //     ))
+            Theme.of(context).textTheme.copyWith(
                   headlineLarge: TextStyle(
                     fontSize: 32,
                     fontWeight: FontWeight.w500,
                     color: primaryColors['900'],
+                    // fontFamily: 'AlMohanad',
+                    fontFamily: 'SultanMedium',
                   ),
                   headlineMedium: TextStyle(
                     color: primaryColors['900'],
+                    // fontFamily: 'AlMohanad',
+                    fontFamily: 'SultanMedium',
                   ),
-                )),
+                ),
         colorScheme: ColorScheme.fromSeed(
             seedColor: const Color.fromRGBO(255, 147, 163, 1)),
         useMaterial3: true,

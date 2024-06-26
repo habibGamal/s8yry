@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:sa8yry/config/data.dart';
@@ -68,6 +70,11 @@ class _PageDetailsState extends State<PageDetails>
                   return LongText(text: data.content)
                       .animate(delay: 200.ms)
                       .fadeIn();
+                } else if (data.type == ContentType.bold) {
+                  return LongText(
+                    text: data.content,
+                    isBold: true,
+                  ).animate(delay: 200.ms).fadeIn();
                 } else if (data.type == ContentType.image) {
                   return RoundedImage(path: data.content)
                       .animate(delay: 200.ms)

@@ -24,6 +24,7 @@ class Highlighted extends StatelessWidget {
         style: Theme.of(context).textTheme.bodyMedium?.copyWith(
               color: Colors.white,
               fontSize: 18,
+              fontFamily: 'SultanMedium',
             ),
         textAlign: TextAlign.justify,
       ),

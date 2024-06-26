@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class LongText extends StatelessWidget {
   final String text;
-  const LongText({super.key, required this.text});
+  final bool isBold;
+  const LongText({super.key, required this.text, this.isBold = false});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +19,9 @@ class LongText extends StatelessWidget {
         text,
         style: Theme.of(context).textTheme.bodyMedium?.copyWith(
               color: Colors.black,
-              fontSize: 18,
+              fontSize: 20,
+              fontWeight: isBold ? FontWeight.bold : FontWeight.normal,
+              fontFamily: 'SultanMedium',
             ),
         textAlign: TextAlign.justify,
       ),
